@@ -1,0 +1,233 @@
+/* @import "http://fonts.fontstorage.com/import/raleway.css"; */
+/* @import "http://fonts.fontstorage.com/import/fog6.css"; */
+/* @import "http://fonts.fontstorage.com/import/ahellya.css"; */
+@import "flex-grid.css";
+
+body {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    /* object-fit: cover; */
+}
+
+h1, h2, a, p, span {
+    font-family: "Bigilla";
+    letter-spacing: .1rem;
+}
+
+header {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    border-bottom: 1.5px solid #30475E;
+}
+
+header h1 {
+    flex: 1;
+    color: #BA6B57;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5rem;
+    font-size: 4rem;
+}
+
+#menu {
+    flex: 3;
+    display: flex;
+    justify-content: space-around;
+}
+
+#menu a {
+    flex: 1;
+    display: block;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+    text-decoration: none;
+    color: #30475E;
+    letter-spacing: .1rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+#menu a:hover {
+    color: #BA6B57;
+}
+
+#icon {
+    flex: 1;
+    text-align: center;
+}
+
+#icon a {
+    display: inline-block;
+    color: #BA6B57;
+    padding-left: 3.4rem;
+}
+
+#icon a:hover {
+    color: #30475E;
+}
+
+.to-menu {
+    display: block;
+    position: fixed;
+    bottom: 3%;
+    left: 2%;
+    text-decoration: none;
+    background-color: #30475e36;
+    color: #30475e85;
+    padding: .5rem;
+    border-radius: 3px;
+    font-size: large;
+}
+
+.to-menu:hover {
+    background-color: #30475eb4;
+    color: #fff;
+    transition: 1s linear;
+}
+
+footer {
+    display: flex;
+    background-color: #E7B2A5;
+    width: 100%;
+    margin-top: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+footer div {
+    flex: 1;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+footer nav {
+    margin-top: 1.3rem
+}
+
+footer p {
+    font-size: larger;
+    color: #fff;
+    color: #BA6B57;
+    font-weight: 500;
+}
+
+footer span {
+    color: #BA6B57;
+}
+
+#social-network a {
+    display: inline-block;
+    color: #BA6B57;
+    font-size: large;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#social-network a:hover,
+footer p:hover {
+    color: #fff;
+}
+
+@font-face {
+    font-family: "Bigilla";  
+    src: url("../fonts/bigilla/Bigilla.otf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+     
+@font-face{
+    font-family: "Bigilla-Bold";
+    src: url("../fonts/bigilla/Bigilla-Bold.otf") format("truetype");
+    font-style: normal; 
+    font-weight: normal; 
+}
+            
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    #icon a {
+        padding-left: 2rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    #icon a {
+        padding-left: 1rem;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px){
+    h1, h2, a, p, span {
+        font-size: smaller;
+    }
+
+    header {
+        border-bottom: 1px solid #30475E;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+   
+    #icon a {
+        display: block;
+        padding-top: 1rem;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    footer p, footer span {
+        font-size: medium;
+        font-weight: lighter;
+    }
+    
+    footer div {
+        padding: .5rem 0;
+
+    }
+}
+
+@media screen and (max-width: 599px){ 
+    h1, h2, a, p, span {
+        font-size: small;
+    }
+
+    header {
+        border-bottom: 1px solid #30475E;
+        margin-bottom: 1rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+    #icon a {
+        display: block;
+        padding-top: 1rem;
+    }
+    #menu {
+        flex-direction: column;
+    }
+    footer {
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    footer p, footer span {
+        font-size: smaller;
+        font-weight: lighter;
+    }
+    
+    footer div {
+        padding-top: 1rem;
+
+    }
+}

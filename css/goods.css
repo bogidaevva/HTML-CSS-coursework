@@ -1,0 +1,163 @@
+@import "style.css";
+
+.strong-alcohol,
+.wine,
+.low-alcohol-drinks, 
+.gastronomy,
+.accessories {
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.picture {
+    border: 1px solid #30475E;
+    border-radius: 2%;
+    margin: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30rem;
+    position: relative;
+}
+
+.picture img {
+    max-height: 80%;
+}
+
+.item div:hover {
+    border: 2px solid #BA6B57;
+}
+
+.item span, .item a{
+    display: block;
+    text-align: center;
+    /* font-family: "Bigilla"; */
+    margin-top: .5rem;
+    line-height: 1.5;
+}
+
+.title {
+    text-decoration: none;
+    color: #30475E;
+}
+
+.title:hover {
+    color: #BA6B57;
+}
+
+.price {
+    color: #BA6B57;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.show-more {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 2rem;
+}
+
+.show-more span {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #BA6B57;
+
+}
+
+.show-more a {
+    text-decoration: none;
+    font-family: "Bigilla-Bold";
+    text-align: center;
+    color: #30475E;
+    margin-top: 2rem;
+}
+
+.show-more a:hover {
+    color: #BA6B57;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    .show-more span {
+        font-size: 1.5rem;
+    }
+
+    .price {
+        font-size: 1.3rem;
+        font-weight: 800;
+    }
+
+    .picture{
+        height: 27rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .show-more span {
+        font-size: 1.2rem;
+    }
+
+    .price {
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+
+    .picture{
+        height: 25rem;
+    }
+    
+    .item span, .item a{
+        line-height: 1.2;
+        font-size: .9rem;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px){
+    .show-more span {
+        font-size: 1rem;
+    }
+
+    .price {
+        font-size: .9rem;
+        font-weight: 600;
+    }
+
+    .picture{
+        height: 20rem;
+    }
+}
+
+@media screen and (max-width: 599px){ 
+    .show-more span {
+        font-size: 1rem;
+    }
+
+    .price {
+        font-size: .9rem;
+        font-weight: 600;
+    }
+
+    .picture{
+        display: none;
+    }
+
+    .item {
+        border: 1px solid #30475E;
+        border-radius: 2%;
+        margin: .5rem;
+        padding: .5rem;
+
+    }
+
+    .item:hover {
+        border: 1px solid #BA6B57;
+    }
+}

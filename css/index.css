@@ -1,0 +1,391 @@
+@import "style.css";
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+section {
+    display: flex;
+}
+
+.brand-img {
+    flex: 1;
+    padding: 3rem 3rem 3rem 7rem; 
+}
+
+.brand-description {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    padding-right: 10%;
+}
+
+.brand-description h2, 
+.tasting-description h2,
+.events h2 {
+    text-transform: uppercase;
+    color: #BA6B57;
+    letter-spacing: .1rem;
+    font-family: "Bigilla-Bold";
+}
+
+.brand-description p,
+.tasting-description p {
+    font-size: larger;
+    line-height: 1.5;
+    color: #30475E;
+}
+
+.tasting {
+    border-bottom: 1px solid #30475E;
+    padding-bottom: 3rem;
+}
+
+.tasting-description {
+    flex: 1;
+    text-align: end;
+    padding-right: 1rem;
+}
+
+.tasting-img {
+    flex: 2;
+    padding-left: 3rem;
+}
+
+.categories {
+   display: flex;
+   padding-top: 3rem;
+   padding-left: 1rem;
+   padding-right: 1rem;
+   
+}
+
+.categories a {
+    flex: 1;
+    text-decoration: none;
+    margin: 0 .5rem;
+    text-align: center;
+}
+
+.categories img {
+    border-radius: 10px;
+    width: 100%;
+    height: 90%;
+    margin-bottom: 1rem;
+}
+
+.categories span {
+    color: #30475E;
+    font-size: larger;
+    letter-spacing: .1rem;
+}
+ 
+.categories span:hover,
+.events > div > a:hover{
+    color: #BA6B57;
+}
+
+.events {
+    border-top: 1px solid #30475E;
+    margin-top: 3rem;
+    position: relative;
+    display: flex;
+}
+
+.events h2{
+    display: inline;
+    padding: 2rem;
+    background-color: #BA6B57;
+    color: #fff;
+    position: absolute;
+    top: 1.5rem;
+    left: 3rem;
+}
+
+.events div {
+    flex: 1;
+    margin: 5rem 5rem 0 5rem;
+    text-align: center;
+}
+
+.events img {
+    width: 100%;
+    height: 80%;
+    margin-bottom: 1.5rem;
+}
+
+.events > div > span {
+    display: block;
+    color: #30475E;
+    font-size: larger;
+    letter-spacing: .1rem;
+    padding-bottom: 1rem;
+}
+
+.events > div > a {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    text-decoration: none;
+    color: #30475E;
+    font-size: larger;
+    letter-spacing: .1rem;
+    font-weight: bolder;
+    padding-top: 1rem;
+    border-top: 1px solid #30475E;
+}
+            
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    .container {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .brand-img {
+        padding: 1.5rem 0 1.5rem 1rem;
+    }
+
+    .brand-description, 
+    .tasting-description {
+        padding: 1rem 1rem;
+        font-size: medium;
+    }
+
+    .tasting {
+        flex-direction: column;
+    }
+
+    .tasting-img {
+        padding: 0 1rem;
+    }
+
+    .tasting-description {
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .categories {
+        padding: 1rem;
+    }
+
+    .categories a {
+        margin-bottom: 1rem;
+    }
+
+    .categories span {
+        font-size: medium;
+    }
+
+    .events {
+        margin-top: 0;
+        padding-top: 2rem;
+    }
+
+    .events h2{
+        top: -.5rem;
+        left: 5rem;
+    }
+
+    .events div {
+        margin: 1rem 3rem 0 3rem;
+    }
+
+    .events > div > span {
+        font-size: medium;
+    }
+
+    .events > div > a {
+        font-size: medium;
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .container {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .brand-img {
+        padding: 1.5rem 0 1.5rem 1rem;
+    }
+
+    .brand-description, 
+    .tasting-description {
+        padding: 1rem 1rem;
+        font-size: medium;
+    }
+
+    .tasting {
+        flex-direction: column;
+    }
+
+    .tasting-img {
+        padding: 0 1rem;
+    }
+
+    .tasting-description {
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .categories {
+        padding: 1rem;
+    }
+
+    .categories a {
+        margin-bottom: 1rem;
+    }
+
+    .categories span {
+        font-size: medium;
+    }
+
+    .events {
+        margin-top: 0;
+    }
+
+    .events h2{
+        top: -1rem;
+        left: 2rem;
+    }
+
+    .events div {
+        margin: 1rem .5rem 0 1rem;
+    }
+
+    .events > div > span {
+        font-size: medium;
+    }
+
+    .events > div > a {
+        font-size: medium;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px){
+    .container {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .brand-img {
+        padding: 6rem 0 6rem 1rem;
+    }
+
+    .brand-description, 
+    .tasting-description {
+        padding: 0 1rem;
+        font-size: medium;
+    }
+
+    .tasting {
+        flex-direction: column;
+    }
+
+    .tasting-img {
+        padding: 0 1rem;
+    }
+
+    .tasting-description {
+        text-align: center;
+        padding: 0 1rem;
+    }
+    .categories {
+        padding: 1rem;
+        margin-top: .5rem;
+        flex-direction: column;
+    }
+
+    .categories a {
+        margin-bottom: 1rem;
+    }
+
+    .categories img {
+        display: none;
+    }
+
+    .events {
+        margin-top: 0;
+        flex-direction: column;
+    }
+
+    .events h2{
+        width: 90%;
+        top: 0;
+        left: 2rem;
+    }
+
+    .events div {
+        margin-top: 1rem;
+    }
+
+    .events > div > span {
+        font-size: medium;
+    }
+
+    .events > div > a {
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 599px){ 
+    .container {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    .brand-img {
+        display: none;
+    }
+
+    .brand-description, 
+    .tasting-description {
+        padding: 0 1rem;
+    }
+
+    .tasting-img {
+        display: none;
+    }
+
+    .categories {
+        padding: 1rem;
+        margin-top: .5rem;
+        flex-direction: column;
+    }
+
+    .categories a {
+        margin-bottom: 1rem;
+    }
+
+    .categories img {
+        display: none;
+    }
+
+    .events {
+        margin-top: 0;
+    }
+
+    .events div {
+        margin-top: 1rem;
+    }
+
+    .events > div > span {
+        font-size: smaller;
+    }
+
+    .events > div > a {
+        font-size: smaller;
+    }
+}

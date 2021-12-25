@@ -1,0 +1,157 @@
+@import "style.css";
+
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+section{
+    width: 30%;
+    margin: 0 auto;
+}
+
+h2 {
+    margin-top: 3rem;
+    font-size: large;
+    color: #BA6B57;
+    text-transform: uppercase;
+    
+}
+
+label {
+    display: inline-block;
+    width: 100%;
+    font-family: "Bigilla";
+    font-size: larger;
+    color: #30475E;
+}
+
+form > div {
+    margin-top: 1rem;
+}
+
+input {
+    display: inline-block;
+    width: 100%;
+    padding-top: .5rem;
+    border: 0;
+    border-bottom: 1px solid #30475E;
+    font-size: larger;
+    color: #30475E;
+}
+
+input::placeholder {
+    font-family: "Bigilla";
+    font-size: smaller;
+}
+
+.agreement{
+    display: flex;
+}
+
+#agreement {
+    width: 7%;
+}
+
+input:focus, 
+select:focus {
+    outline: none;
+}
+
+select {
+    display: inline-block;
+    width: 40%;
+    border: 0;
+    border-bottom: 1px solid #30475E;
+    color: #30475E;
+    font-size: medium;
+}
+
+.agreement{
+    display: block;
+    line-height: 2rem;
+    margin: 0;
+    user-select: none; 
+    cursor: pointer;
+    position: relative;
+}
+
+.agreement input[type="checkbox"] {
+    position: absolute;
+    display: block;
+    z-index: -1;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.agreement span {
+    display: inline-block;
+    line-height: 1rem;
+    padding: 0 0 0 2rem;
+    position: relative;
+    font-size: smaller;
+}
+
+.agreement span:before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    top: 0;
+    left: 0;
+    border: 1px solid #30475E;
+    border-radius: 5px;
+}
+
+.agreement input[type="checkbox"]:checked + span:before {
+    content: "✓";
+    color: #BA6B57;
+    text-align: center;
+    font-weight: bold;
+}
+
+button {
+    border: 0;
+    color:#30475E;
+    width: 100%;
+    background-color: #fff;
+    font-family: "Bigilla";
+    text-transform: uppercase;
+    font-size: large;
+    letter-spacing: 5px;
+    margin-top: 1rem;
+    text-align: end;
+}
+
+button:hover {
+    color: #BA6B57;
+}
+
+form {
+    margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    section{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    section{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px){
+    section{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 599px){ 
+    section{
+        width: 70%;
+    }
+}

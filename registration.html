@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/registration.css">
+    <script src="https://kit.fontawesome.com/9cf9a6173e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1>In vino</h1>
+        <nav id="menu">
+            <a href="index.html">Home</a>
+            <a href="goods.html">Catalog</a>
+            <a href="#">Tastings</a>
+        </nav>
+        <nav id="icon">
+            <a href="registration.html"><i class="far fa-user"></i></a>
+            <a href="#"><i class="far fa-heart"></i></a>
+            <a href="#"><i class="far fa-credit-card"></i></a>
+        </nav>
+    </header>
+    <main>
+            <section>
+                <h2>register to buy</h2>
+                <form action="#" method="POST">
+                    <div>
+                        <label for="email">enter your username (email address)</label>
+                        <input type="text" id="email" placeholder="e-mail" name="email" required>
+                    </div>
+                    <div>
+                        <label for="password">create a password (at least 8 characters)</label>
+                        <input type="password" id="password" placeholder="password" name="password" required
+                            minlength="8">
+                    </div>
+                    <div>
+                        <label for="name">name</label>
+                        <input type="text" id="name" placeholder="what is your name?" name="name">
+                    </div>
+                    <div>
+                        <label for="gender">gender</label>
+                        <select name="gender" id="gender">
+                            <option value="male">male</option>
+                            <option value="female">female</option>
+                            <option value="unknown">I prefer not to tell</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="age">age</label>
+                        <input type="number" id="age" placeholder="how old are you?" name="age" required min="18">
+                    </div>
+                    <div>
+                        <label for="tel">phone number</label>
+                        <input type="tel" id="tel" placeholder="+7 (***) *** - ** - **" name="tel">
+                    </div>
+                    <div>
+                        <label class="agreement">
+                            <input type="checkbox" name="agreement" value="agreement" required>
+                            <span>I consent to the processing of personal data</span>
+                        </label>
+                    </div>
+                    <button type="submit">register now</button>
+            </section>
+    </main>
+    <footer>
+        <div>
+            <span>follow us on social networks</span>
+            <nav id="social-network">
+                <a href="#"><i class="fab fa-vk"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-telegram-plane"></i>
+                </a>
+            </nav>
+        </div>
+        <div>
+            <span>contact us by phone</span>
+            <p>+7 (495) 120-37-73</p>
+        </div>
+        <div>
+            <span>or email</span>
+            <p>Lwine_boutiqueChain@gmail.com</p>
+        </div>
+    </footer>
+</body>
+
+</html>
